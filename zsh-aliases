@@ -1,0 +1,17 @@
+# aliases
+alias zsh-update-plugins="find "$ZDOTDIR/plugins" -type d -exec test -e '{}/.git' ';' -print0 | xargs -I {} -0 git -C {} pull -q"
+alias neovide="neovide --frame none"
+alias nvimstart="nvim --startuptime out && nvim out"
+alias nvconf="cd ~/.config/nvim && nvim init.lua"
+alias pip="pip3"
+alias luamake=/Users/srinivasib/.config/nvim/language-servers/lua-language-server/3rd/luamake/luamake
+alias lvim=/Users/srinivasib/.local/bin/lvim
+
+# confirm before overwriting something
+alias cp="cp -i"
+alias mv='mv -i'
+alias rm='rm -i'
+
+# listing files
+alias ls="exa --icons"
+alias la="exa --icons -a"
